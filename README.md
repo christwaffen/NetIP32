@@ -5,6 +5,7 @@
 Zamiast kupować gotowe zabawki typu Flipper Zero, postanowiłem zakodzić własne narzędzie do network reconu. Efekt? Urządzenie mieści się w dłoni, automatycznie mapuje architekturę sieci, wykrywa aktywne maszyny i prześwietla je pod kątem otwartych portów. Całość obsługujesz za pomocą fizycznych przycisków, a wyniki śledzisz na żywo na małym ekranie OLED.
 
 ### Hardware
+
 <img width="1840" height="1405" alt="netip32_build2" src="https://github.com/user-attachments/assets/51d783e2-91e6-4b5f-b573-59de789f62b5" />
 
 * **Mózg operacji:** **ESP32** jako mikrokontroler, który w tym projekcie bierze całe przetwarzanie danych, obsługę stosu sieciowego TCP/IP i bezprzewodową łączność Wi-Fi.
@@ -14,7 +15,7 @@ Zamiast kupować gotowe zabawki typu Flipper Zero, postanowiłem zakodzić włas
   * `BTN_DOWN` (GPIO 22) – Nawigacja w dół.
   * `BTN_OK` (GPIO 4) – Odpalenie akcji / Zatwierdzenie opcji.
   * `BTN_BACK` (GPIO 16) – Powrót do menu lub przycisk przerywania, który natychmiast zrywa trwające skanowanie.
-*
+  * 
 <img width="1840" height="1946" alt="netip32_build" src="https://github.com/user-attachments/assets/500fc0a3-cd58-4fb1-89e3-9a485886e618" />
 
 ### Software
@@ -55,11 +56,17 @@ Wybieram z menu konkretny **Wektor Skanowania**, a ESP32 bierze na celownik *tyl
 | Wektor Skanowania | Przykładowe Porty w Bazie | Cel Audytu |
 
 | **Web Services** | 80, 443, 3000, 5000, 8080, 9200 | Szukanie ukrytych serwerów HTTP, API i paneli admina. |
+
 | **Remote Access** | 22, 23, 2222, 3389, 5900, 5985 | Wykrywanie otwartych furtek: SSH, Telnet, RDP czy VNC. |
+
 | **File Shares** | 20, 21, 139, 445, 2049 | Lokalizowanie serwerów FTP i podatnych udziałów Samba/SMB. |
+
 | **Databases** | 1433, 1521, 3306, 5432, 6379, 27017 | Namierzanie baz danych (MySQL, Postgres, MongoDB, Redis). |
+
 | **Infrastructure** | 53, 67, 88, 161, 389, 5060 | Podglądanie usług sieciowych: DNS, LDAP, SNMP czy VoIP. |
+
 | **DevOps / CI-CD** | 2375, 2376, 6443, 9092, 15672 | Prześwietlanie środowisk pod Dockerem, Kubernetesem czy RabbitMQ. |
+
 | **Other / Custom** | Ponad 100 niestandardowych portów | Głęboka orka w poszukiwaniu nietypowych aplikacji i backdoorów. |
 
 ### Zarządzanie Prędkością
