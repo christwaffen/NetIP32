@@ -51,7 +51,10 @@ Kiedy mamy już listę "żywych" maszyn, możemy dobrać się do nich bardziej s
 
 <img width="1840" height="1665" alt="vectors" src="https://github.com/user-attachments/assets/1e80eb44-68c0-4006-8543-3de735f19072" />
 
-Wybieram z menu konkretny **Wektor Skanowania**, a ESP32 bierze na celownik *tylko i wyłącznie* aktywne urządzenia, bombardując je zapytaniami o konkretne, specjalistyczne usługi:
+Wybieram z menu konkretny **Wektor Skanowania**, a ESP32 bierze na celownik *tylko i wyłącznie* aktywne urządzenia, bombardując je zapytaniami o konkretne, specjalistyczne usługi.
+
+<img width="1840" height="1660" alt="web_services" src="https://github.com/user-attachments/assets/e2672cfa-124a-495b-871d-3f35bce110c1" />
+(wynik skanowania wektora "Web Services")
 
 | Wektor Skanowania | Przykładowe Porty w Bazie | Cel Audytu |
 
