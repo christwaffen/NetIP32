@@ -15,7 +15,7 @@ Zamiast kupować gotowe zabawki typu Flipper Zero, postanowiłem zakodzić włas
   * `BTN_DOWN` (GPIO 22) – Nawigacja w dół.
   * `BTN_OK` (GPIO 4) – Odpalenie akcji / Zatwierdzenie opcji.
   * `BTN_BACK` (GPIO 16) – Powrót do menu lub przycisk przerywania, który natychmiast zrywa trwające skanowanie.
-  * 
+    
 <img width="1840" height="1946" alt="netip32_build" src="https://github.com/user-attachments/assets/500fc0a3-cd58-4fb1-89e3-9a485886e618" />
 
 ### Software
